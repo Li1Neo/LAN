@@ -119,6 +119,7 @@ def action_sample(srcroot, root):
     num_features = ['O', 'C', 'E', 'A', 'N']
     cat_features = ['role', 'functional_unit', 'department', 'team', 'supervisor', 'host']
     seq_features = ['hist_activity']
+    # https://drive.google.com/drive/folders/1Szltzgv1VAzmWg0I193GunwB_4trkZwo?usp=drive_link
     encoders = pickle.load(open(os.path.join(root, str(srcroot[-4:]) + '_' + 'encoders.pkl'), 'rb'))
     dftrain = pd.read_pickle(os.path.join(root, str(srcroot[-4:]) + '_' + 'dftrain_action.pkl'))
     dfval = pd.read_pickle(os.path.join(root, str(srcroot[-4:]) + '_' + 'dfval_action_do_all.pkl')) 
